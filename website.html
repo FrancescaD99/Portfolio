@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francesca D'Alessandro - Mobility & Data Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .section-title {
+            border-bottom: 3px solid #6366f1; /* indigo-500 */
+            padding-bottom: 8px;
+            margin-bottom: 24px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        .skill-badge {
+            background-color: #eef2ff; /* indigo-100 */
+            color: #4338ca; /* indigo-700 */
+            font-weight: 500;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.875rem; /* Adjust based on padding */
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: white;
+            border: 4px solid #6366f1; /* indigo-500 */
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <!-- Main Container -->
+    <div class="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Header Section -->
+        <header class="flex flex-col md:flex-row items-center mb-12">
+            <div class="w-40 h-40 mb-6 md:mb-0 md:mr-8 flex-shrink-0">
+                <!-- Placeholder for profile picture. Replace the src with your image URL -->
+                <img class="rounded-full w-full h-full object-cover border-4 border-indigo-200 shadow-md" src="pic1.jpg" alt="Francesca D'Alessandro">
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold text-slate-900">Francesca D'Alessandro</h1>
+                <p class="text-xl text-indigo-600 mt-1">Mobility Consultant & Data Specialist</p>
+                <div class="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-slate-600">
+                    <a href="mailto:francesca.dalessandro01@gmail.com" class="flex items-center hover:text-indigo-600 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        francesca.dalessandro01@gmail.com
+                    </a>
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        (+34) 647620385
+                    </div>
+                     <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Barcelona, Spain
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Me Section -->
+        <section id="about" class="mb-16">
+            <h2 class="text-3xl font-bold text-slate-800 section-title">About Me</h2>
+            <p class="text-lg leading-relaxed">
+                As a Mobility Consultant and Data Specialist, I thrive at the intersection of technology and urban planning. With a foundation in Automation and Mobility Engineering, I apply a robust analytical toolkit to build sustainable and inclusive transport solutions. This commitment is reflected in my award-winning Master's thesis on gender and mobility and my role as a Global Expert for the Global Alliance for Feminist Transport, where I advocate for data-informed strategies that create more equitable cities
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-16">
+            <h2 class="text-3xl font-bold text-slate-800 section-title">Coding Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">OD Mobility Dashboard</h3>
+                    <p class="mb-4">An interactive web application built with R and Shiny to visualize and analyze origin-destination mobility flows between Spain and Portugal, utilizing open data from the Spanish Ministry of Transport.</p>
+                    <a href="https://factual-consulting.shinyapps.io/od-mobility-dashboard/" target="_blank" rel="noopener noreferrer" class="inline-block bg-indigo-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-indigo-600 transition">
+                        View Dashboard &rarr;
+                    </a>
+                </div>
+                <!-- Project 2 -->
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Global AV Deployments Dashboard</h3>
+                    <p class="mb-4">A Power BI dashboard tracking global Autonomous Vehicle (AV) deployments. This project visualizes the real-life evolution of the AV market, showcasing key trends and developments across the world.</p>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiMzBlYzZkNzItMTJjNS00NjRiLTkwZTEtZTU1NGM0NGRmYzcwIiwidCI6ImFlMmQ4MjRiLTU3ZDMtNDJjOC05NDg4LWJkMTNkZjlhMjU4MSIsImMiOjl9&pageName=6b6d31905a9420ec7281" target="_blank" rel="noopener noreferrer" class="inline-block bg-indigo-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-indigo-600 transition">
+                        View Dashboard &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Recognition Section -->
+        <section id="achievements" class="mb-16">
+            <h2 class="text-3xl font-bold text-slate-800 section-title">Achievements & Recognition</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Thesis Award -->
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">EIT Urban Mobility Thesis Award</h3>
+                    <p class="mb-4">Awarded 3rd place for my Master's thesis, "Exploring the Impact of Gender and Family Structure on Mobility Patterns," which also received top honors upon graduation.</p>
+                    <a href="https://www.politesi.polimi.it/handle/10589/222592" target="_blank" rel="noopener noreferrer" class="inline-block bg-indigo-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-indigo-600 transition">
+                        Read Thesis &rarr;
+                    </a>
+                </div>
+                <!-- Global Expert -->
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Global Expert in Feminist Transport</h3>
+                    <p class="mb-4">Recognized as a Global Expert by the Global Alliance for Feminist Transport for my contributions and expertise in gender-inclusive mobility.</p>
+                    <a href="https://feminist-transport.org/global-expert/francesca-dalessandro/" target="_blank" rel="noopener noreferrer" class="inline-block bg-indigo-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-indigo-600 transition">
+                        View Profile &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience" class="mb-16">
+            <h2 class="text-3xl font-bold text-slate-800 section-title">Work Experience</h2>
+            <div class="relative pl-12 border-l-2 border-slate-200">
+                <!-- Experience 1 -->
+                <div class="mb-12 timeline-item">
+                    <p class="font-semibold text-indigo-600">Oct 2024 - Current</p>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1">Mobility Consultant & Data Specialist</h3>
+                    <p class="text-md text-slate-600 mb-3">Factual Consulting SL. - Barcelona, Spain</p>
+                    <ul class="list-disc list-inside space-y-1">
+			<li>Leading the technical coordination of two projects for the Metropolitan Transport Authority of Barcelona.</li>
+                        <li>Consulting and data analysis in mobility innovation and sustainable transport.</li>
+                        <li>Organized technical courses on Mobility Data Spaces, Demand-Responsive Transport and AI in mobility.</li>
+                        <li>Project Manager for the Horizon Project GreenLog.</li>
+                        <li>Built a WebApp using R to display mobility flows from Spain to Portugal.</li>
+                    </ul>
+                </div>
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <p class="font-semibold text-indigo-600">Mar 2024 - Sep 2024</p>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1">Data Analyst Intern</h3>
+                    <p class="text-md text-slate-600 mb-3">Metropolitan Transport Authority of Barcelona (ATM)</p>
+                     <ul class="list-disc list-inside space-y-1">
+                        <li>Managed data acquisition, structuring, analysis, and visualization.</li>
+                        <li>Developed a Power BI platform for traffic data and KPI analysis.</li>
+                        <li>Conducted a cost-benefit analysis comparing Mou-te API with Google Maps API.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Education Section -->
+        <section id="education" class="mb-16">
+            <h2 class="text-3xl font-bold text-slate-800 section-title">Education</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <p class="text-sm text-slate-500">2022 - 2024</p>
+                    <h3 class="text-lg font-semibold text-slate-900 mt-1">Double Degree in Mobility Engineering and Urban Mobility</h3>
+                    <p class="text-slate-600">EIT Urban Mobility, Politecnico di Milano, UPC</p>
+                </div>
+                 <div class="card p-6">
+                    <p class="text-sm text-slate-500">2018 - 2022</p>
+                    <h3 class="text-lg font-semibold text-slate-900 mt-1">Bachelor's Degree in Automation Engineering</h3>
+                    <p class="text-slate-600">Politecnico di Milano</p>
+                </div>
+                 <div class="card p-6 md:col-span-2">
+                    <p class="text-sm text-slate-500">Certificate</p>
+                    <h3 class="text-lg font-semibold text-slate-900 mt-1">Digital Twins for Smart Mobility</h3>
+                    <p class="text-slate-600">Polytechnic University of Catalonia</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="text-3xl font-bold text-slate-800 section-title">Skills</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="font-semibold text-lg mb-3 text-slate-800">Programming & Data</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-badge py-1 px-3 rounded-full">Python</span>
+                        <span class="skill-badge py-1 px-3 rounded-full">R Language/RStudio</span>
+                        <span class="skill-badge py-1 px-3 rounded-full">SQL</span>
+                        <span class="skill-badge py-1 px-3 rounded-full">MATLAB</span>
+                        <span class="skill-badge py-1 px-3 rounded-full">React.js</span>
+                        <span class="skill-badge py-1 px-3 rounded-full">Java</span>
+                    </div>
+                </div>
+                 <div>
+                    <h3 class="font-semibold text-lg mb-3 text-slate-800">Tools & Software</h3>
+                    <div class="flex flex-wrap gap-3">
+                         <span class="skill-badge py-1 px-3 rounded-full">PTV-Visum</span>
+                         <span class="skill-badge py-1 px-3 rounded-full">Aimsun</span>
+                         <span class="skill-badge py-1 px-3 rounded-full">QGIS</span>
+                         <span class="skill-badge py-1 px-3 rounded-full">Power BI</span>
+                         <span class="skill-badge py-1 px-3 rounded-full">Microsoft Office</span>
+                    </div>
+                </div>
+                 <div>
+                    <h3 class="font-semibold text-lg mb-3 text-slate-800">Languages</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-badge py-1 px-3 rounded-full">Italian (Native)</span>
+                        <span class="skill-badge py-1 px-3 rounded-full">English (C2)</span>
+                        <span class="skill-badge py-1 px-3 rounded-full">Spanish (C1)</span>
+                        <span class="skill-badge py-1 px-3 rounded-full">Catalan (B2)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-300 mt-16 py-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <p>&copy; 2025 Francesca D'Alessandro. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
